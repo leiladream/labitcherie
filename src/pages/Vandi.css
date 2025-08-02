@@ -1,0 +1,42 @@
+.vandi-page {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  min-height: 100vh;
+  color: #cccccc;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  overflow: hidden;
+}
+
+.vandi-logo {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: glitchText 2s infinite;
+}
+
+.vandi-avatar {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 25px #ff0000;
+}
+
+.vandi-bio {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+/* Glitch effet */
+@keyframes glitchText {
+  0% { text-shadow: 2px 2px #ff003c, -2px -2px #00fff7; }
+  20% { text-shadow: -2px -2px #ff003c, 2px 2px #00fff7; }
+  40% { text-shadow: 2px -2px #ff003c, -2px 2px #00fff7; }
+  60% { text-shadow: -2px 2px #ff003c, 2px -2px #00fff7; }
+  80% { text-shadow: 0 0 #ff003c, 0 0 #00fff7; }
+  100% { text-shadow: 2px 2px #ff003c, -2px -2px #00fff7; }
+}

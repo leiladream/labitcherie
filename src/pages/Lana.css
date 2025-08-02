@@ -1,0 +1,42 @@
+.lana-page {
+  background: linear-gradient(135deg, #ffaad4, #ffc1e3);
+  min-height: 100vh;
+  color: #4d004d;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.lana-logo {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+.lana-avatar {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 20px #ff66cc;
+  animation: pulseAvatar 3s infinite ease-in-out;
+}
+
+.lana-bio {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 8px #ff66cc; }
+  50% { text-shadow: 0 0 20px #ff66cc; }
+}
+
+@keyframes pulseAvatar {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}

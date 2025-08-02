@@ -1,0 +1,35 @@
+.accueil-container {
+  height: 100vh;
+  background: radial-gradient(circle at top left, #2e003e, #000000);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-glitch {
+  font-size: 3em;
+  position: relative;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff00c8, -2px -2px #00fff7; }
+  50% { text-shadow: -2px -2px #ff00c8, 2px 2px #00fff7; }
+  100% { text-shadow: 2px -2px #ff00c8, -2px 2px #00fff7; }
+}
+
+.slogan {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  margin: 1em;
+  padding: 0.8em 2em;
+  border-radius: 8px;
+  background: #ff00c8;
+  color: white;
+}

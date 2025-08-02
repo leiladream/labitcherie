@@ -1,0 +1,26 @@
+.intro-container {
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.glitch {
+  font-size: 2.5em;
+  color: white;
+  position: relative;
+  animation: glitch-anim 2s infinite;
+}
+
+@keyframes glitch-anim {
+  0% { transform: skew(0deg); }
+  25% { transform: skew(5deg); }
+  50% { transform: skew(-5deg); }
+  75% { transform: skew(3deg); }
+  100% { transform: skew(0deg); }
+}
