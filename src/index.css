@@ -91,3 +91,20 @@ h2 {
   font-style: italic;
   text-shadow: 0 0 5px #ff99cc;
 }
+.milestone-tag {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #ffccff;
+  text-shadow: 0 0 6px #ff33cc, 0 0 10px #ff99dd;
+  font-weight: bold;
+  animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 6px #ff33cc, 0 0 10px #ff99dd;
+  }
+  100% {
+    text-shadow: 0 0 12px #ff66ff, 0 0 20px #ffbbee;
+  }
+}
